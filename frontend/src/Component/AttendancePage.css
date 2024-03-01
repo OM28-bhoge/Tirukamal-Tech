@@ -1,0 +1,54 @@
+.container-atte{
+    background-color: blueviolet;
+    height: 650px;
+    margin-top: -75px;
+    width: 1300px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6a0dad;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #4b0082;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #800080;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  #work-hours {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .first-heading {
+    font-weight: bold;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
