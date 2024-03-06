@@ -8,11 +8,20 @@ import './App.css';
 import axios from 'axios';
 function App() {
   const [data, setData] = useState({});
+  fetch('/Component/Registration', {
+    method: 'GET'
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data.message); // Print the message received from the Flask endpoint
+    // You can perform any other actions here, such as updating state or navigating to another page in your React app
+})
+.catch(error => console.error('Error:', error));
 
   useEffect(() => {
     fetchData();
   }, []);
-  const pythonFilePath = 'HRC PROJECT/backend/app.py';
+  const pythonFilePath = '/frontend/app.py';
   const fetchData = async () => {
 //const axios = require('axios'); // legacy way
 

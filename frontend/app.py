@@ -5,17 +5,18 @@ app = Flask(__name__, static_folder='build', static_url_path='/')
 CORS(app)
 
 # Serve the React frontend at the root URL
-@app.route('/public', methods =['GET'])
+@app.route('/', methods =['GET'])
 def index():
     # Render the index.html template
     return render_template('index.html')
 
 # Define routes to handle API requests
-@app.route('/', methods=['GET'])
+@app.route('/Component/Registration', methods=['GET'])
 def registration():
     # Your logic to retrieve registration data goes here
     registration_data = {
-        "message": "Registration page data from Flask!"
+        "message": "Registration page data from Flask!",
+        "registration_fields": ["name", "email", "password"]  # Example registration fields
     }
     return jsonify(registration_data)
 

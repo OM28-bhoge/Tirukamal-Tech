@@ -15,8 +15,10 @@
   },
   "scripts": {
     "start": " set PORT = port=127.0.0.1:5000 && react-scripts start",
+    "start-app":"cd app && venv/bin/flask run --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-app":"cd app && flask test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,5 +38,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
