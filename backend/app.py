@@ -5,7 +5,7 @@ app = Flask(__name__, static_folder='build', static_url_path='/')
 CORS(app)
 
 # Serve the React frontend at the root URL
-@app.route('/frontend/public', methods =['GET'])
+@app.route('/public', methods =['GET'])
 def index():
     # Render the index.html template
     return render_template('index.html')
@@ -44,4 +44,4 @@ def registration():
 #     return jsonify(AttendancePage_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True , port=5000)
