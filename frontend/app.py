@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, render_template, request_finished, send_from_directory
 from flask_cors import CORS
 # import os
-app = Flask(__name__, static_folder='build', static_url_path='/')
+app = Flask(__name__, static_folder='public', static_url_path='/' , template_folder = 'src')
 CORS(app)
 
 # Serve the React frontend at the root URL
